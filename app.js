@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use('/', router);
 
-const uri = process.env.MONGO_URL;
+const uri = process.env.MONGODB_URI;
 
 mongoose
     .connect(uri, {
