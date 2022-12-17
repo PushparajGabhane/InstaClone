@@ -66,6 +66,8 @@ app.get("/store-data", async (req, res) => {
     }
 });
 
+mongoose.set('strictQuery', true);
+
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true }, () => {
     console.log('connected to DB')
 });
