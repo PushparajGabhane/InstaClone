@@ -10,7 +10,7 @@ const PostForm = () => {
     const [image, setImage] = useState([]);
     const register = async () => {
         let publishDate = new Date();
-        let date = `${publishDate.getDate()}/${publishDate.getMonth()}/${publishDate.getFullYear()}`
+        let date = `${publishDate.getDate()}/${publishDate.getMonth()+1}/${publishDate.getFullYear()}`
         console.log(user);
         const formdata = new FormData();
         formdata.append("image", image);
