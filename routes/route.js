@@ -34,7 +34,7 @@ router.post("/posts", async (req, res) => {
     }
 })
 
-router.get("/posts", async (req, res) => {
+router.get("/", async (req, res) => {
     try {
         let data = await Posts.find();
         data = data.reverse()
