@@ -7,7 +7,7 @@ const HomePage = () => {
 
     const [data, setData] = useState([]);
     useEffect(() => {
-        fetch("https://instaclone-backend-wq4r.onrender.com/posts").then((res) => res.json()).then((userData) => setData(userData)).catch((err) => console.log(err));
+        fetch("https://instaclone-backend-wq4r.onrender.com").then((res) => res.json()).then((userData) => setData(userData)).catch((err) => console.log(err));
     }, []);
 
     return (
